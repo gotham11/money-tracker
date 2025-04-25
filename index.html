@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Money Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Money Tracker 💸</h1>
+  <div class="container">
+    <div class="balance" id="balance">$0</div>
+    <form class="transaction-form" id="transactionForm">
+      <input type="text" id="description" placeholder="Enter description..." required>
+      <input type="number" id="amount" placeholder="Enter amount..." required>
+      <select id="type" required>
+        <option value="income">Income (+)</option>
+        <option value="expense">Expense (-)</option>
+      </select>
+      <button type="submit">Add Transaction</button>
+    </form>
+    <div class="transactions" id="transactions"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
